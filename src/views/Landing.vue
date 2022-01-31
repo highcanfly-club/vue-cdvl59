@@ -29,7 +29,7 @@
                     <span class="sr-only">Workflow</span>
                     <img
                       class="h-8 w-auto sm:h-10"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                      src="@/assets/img/cdvl59carre-indigo-700.svg"
                     />
                   </a>
                   <div class="-mr-2 flex items-center md:hidden">
