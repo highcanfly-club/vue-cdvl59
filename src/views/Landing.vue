@@ -31,7 +31,7 @@
                   ></diV
                 >
                 <div>
-                  <span class="block text-slate-300 xl:inline">de</span>
+                  <span class="block text-slate-300 xl:inline">de&nbsp;</span>
                   <span class="block text-indigo-700 xl:inline"
                     >Vol Libre
                   </span>
