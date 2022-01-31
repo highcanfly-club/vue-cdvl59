@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import "@/assets/styles/index.css";
+import metaMixin from "@/mixins/MetaMixin";
 import App from "@/App.vue";
 
 import { createWebHistory, createRouter } from "vue-router";
@@ -18,5 +19,6 @@ const router = createRouter({
 
   const app = createApp(App);
   app.use(router);
+  app.mixin(metaMixin);
   app.mount("#app");
   
