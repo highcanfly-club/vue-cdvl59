@@ -70,7 +70,7 @@
         <div class="w-full md:w-5/12 px-4 mx-auto text-center">
           <div class="text-xs text-slate-500 font-semibold py-1">
             <a
-              href="https://www.highcanfly.club?ref=vn-footer"
+              href="https://cdvl59.cf"
               class="text-slate-500 hover:text-slate-800"
               >Copyright © Comité Départemental de Vol Libre du Nord - 2021-{{ date }}</a
             >
@@ -87,7 +87,66 @@
       <img style="position: absolute;" src="@/assets/img/arrow-top.svg"/>
     </VueScrollUp>
   </footer>
-</template>
+</template>y
+<style scoped>
+.vue-scroll-up {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.658);
+  border: rgba(0, 0, 0, 0.658);
+  border-radius: 100px;
+  bottom: 10px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  height: 55px;
+  justify-content: center;
+  position: fixed;
+  right: 10px;
+  width: 55px;
+  z-index: 99;
+}
+
+/* .vue-scroll-up::after {
+  border: 2px solid white;
+  border-radius: 10px;
+  content: '';
+  display: block;
+  height: 25px;
+  margin: 0 auto;
+  width: 10px;
+} */
+
+.vue-scroll-up::before {
+  animation: 2s top infinite;
+  border: 1px solid white;
+  border-radius: 10px;
+  content: '';
+  display: block;
+  height: 10px;
+  left: 48%;
+  position: absolute;
+  width: 0;
+}
+
+@keyframes top {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .vue-scroll-up {
+    bottom: 10px;
+    transform: translateX(5px) scale(0.7);
+  }
+}
+</style>
 <script>
 import VueScrollUp from '@/plugins/vue-scroll-up';
 export default {
