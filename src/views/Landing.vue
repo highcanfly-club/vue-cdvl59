@@ -152,7 +152,8 @@ export default {
     ComiteDirecteurTab,
   },
   data() {
-    const initialtab = parseInt(this.$route.params.initialtab.substr(4)) ? parseInt(this.$route.params.initialtab.substr(4)) : -1;
+    const paramsTab = this.$route.params.initialtab ? this.$route.params.initialtab : "tab_-1";
+    const initialtab = parseInt(paramsTab.substr(4)) ? parseInt(paramsTab.substr(4)) : -1;
     return {
       initialtab,
       tabNumber: ref(initialtab),
