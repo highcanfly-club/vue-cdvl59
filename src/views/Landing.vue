@@ -79,32 +79,29 @@
             <div
               v-bind:class="{ hidden: tabNumber !== 0, block: tabNumber === 0 }"
               class="sm:text-center lg:text-left"
-            >
-              Tab 0
+            ><kite-tab/>
             </div>
             <div
               v-bind:class="{ hidden: tabNumber !== 1, block: tabNumber === 1 }"
               class="sm:text-center lg:text-left"
-            >
-              Tab 1
-            </div>
+            ><parapente-tab/></div>
             <div
               v-bind:class="{ hidden: tabNumber !== 2, block: tabNumber === 2 }"
               class="sm:text-center lg:text-left"
             >
-              Tab 2
+              <cerf-volant-tab/>
             </div>
             <div
               v-bind:class="{ hidden: tabNumber !== 3, block: tabNumber === 3 }"
               class="sm:text-center lg:text-left"
             >
-              Tab 3
+              <boomerang-tab/>
             </div>
             <div
               v-bind:class="{ hidden: tabNumber !== 5, block: tabNumber === 5 }"
               class="sm:text-center lg:text-left"
             >
-              Tab 5
+              <comite-directeur-tab/>
             </div>
           </main>
         </div>
@@ -135,6 +132,11 @@
 import { ref } from "vue";
 import Header from "@/headers/Header.vue";
 import Footer from "@/footers/Footer.vue";
+import ParapenteTab from "@/tabs/ParapenteTab.vue";
+import KiteTab from "@/tabs/KiteTab.vue";
+import CerfVolantTab from "@/tabs/CerfVolantTab.vue";
+import BoomerangTab from "@/tabs/BoomerangTab.vue";
+import ComiteDirecteurTab from "@/tabs/ComiteDirecteurTab.vue";
 
 export default {
   description:
@@ -143,6 +145,11 @@ export default {
   components: {
     Header,
     Footer,
+    KiteTab,
+    ParapenteTab,
+    CerfVolantTab,
+    BoomerangTab,
+    ComiteDirecteurTab,
   },
   data() {
     return {

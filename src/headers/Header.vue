@@ -28,19 +28,6 @@
         <div
           class="hidden md:flex md:content-evenly md:ml-10 md:pr-4 md:space-x-8"
         >
-          <!--
-          <a
-            v-for="item in navigation"
-            :key="item.name"
-            :href="item.href"
-            class="whitespace-nowrap font-medium text-gray-500 hover:text-gray-900"
-            >{{ item.name }}</a
-          >
-          <a
-            href="#"
-            class="whitespace-nowrap font-medium text-indigo-600 hover:text-indigo-500"
-            >Comité directeur</a
-          >-->
           <ul class="flex px-5">
             <li
               v-for="(item, index) in navigation"
@@ -54,7 +41,13 @@
                   item.name
                 }}</span>
               </div>
-              <div v-bind:class="{'hidden': tabNumber !== index, 'block': tabNumber === index}" class="w-full h-1 bg-indigo-600 rounded-t-md"></div>
+              <div
+                v-bind:class="{
+                  hidden: tabNumber !== index,
+                  block: tabNumber === index,
+                }"
+                class="w-full h-1 bg-indigo-600 rounded-t-md"
+              ></div>
             </li>
             <li
               @click="toggleTabs(5)"
@@ -65,7 +58,13 @@
                   >Comité directeur</span
                 >
               </div>
-              <div v-bind:class="{'hidden': tabNumber !== 5, 'block': tabNumber === 5}" class="w-full h-1 bg-indigo-600 rounded-t-md"></div>
+              <div
+                v-bind:class="{
+                  hidden: tabNumber !== 5,
+                  block: tabNumber === 5,
+                }"
+                class="w-full h-1 bg-indigo-600 rounded-t-md"
+              ></div>
             </li>
           </ul>
         </div>
@@ -90,6 +89,7 @@
           <div class="px-5 pt-4 flex items-center justify-between">
             <div>
               <img
+                @click="toggleTabs(-1)"
                 class="h-8 w-auto"
                 src="@/assets/img/cdvl59carre-indigo-700.svg"
                 alt=""
@@ -106,14 +106,16 @@
           </div>
           <div class="flex items-end px-2 pt-2 pb-3 space-y-1">
             <a
-              v-for="item in navigation"
+              v-for="(item,index) in navigation"
               :key="item.name"
               :href="item.href"
+              @click="toggleTabs(index)"
               class="block px-3 py-2 whitespace-nowrap rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
               >{{ item.name }}</a
             >
 
             <a
+              @click="toggleTabs(5)"
               href="#"
               class="block w-full px-3 py-2 whitespace-nowrap text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
             >
@@ -126,7 +128,7 @@
   </Popover>
 </template>
 <script>
-import {ref} from "vue";
+import { ref } from "vue";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
 import { MenuIcon, XIcon } from "@heroicons/vue/outline";
 const navigation = [
@@ -156,7 +158,7 @@ export default {
   methods: {
     toggleTabs: function (tabNumber) {
       this.tabNumber = tabNumber;
-      this.$emit('toggleTabs',tabNumber);
+      this.$emit("toggleTabs", tabNumber);
     },
   },
 };
