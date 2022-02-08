@@ -8,8 +8,8 @@
           <span class="block text-indigo-500 xl:inline">Boomerang</span>
         </div>
         <div>
-          <span class="block text-indigo-700 xl:inline">CDVL </span
-          ><span class="block text-indigo-500 xl:inline"> 59</span>
+          <span class="block text-slate-500 xl:inline"> au </span>
+          <span class="block text-indigo-700 xl:inline">CDVL 59</span>
         </div>
       </div>
     </h1>

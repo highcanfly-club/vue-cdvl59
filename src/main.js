@@ -10,6 +10,11 @@ const routes = [
         component: () => import("@/views/Landing.vue"),
         name: "Index",
     },
+    {
+        path: "/:initialtab",
+        component: () => import("@/views/Landing.vue"),
+        name: "Tab",
+    },
     { path: "/:pathMatch(.*)*", redirect: "/" },
 ];
 const router = createRouter({

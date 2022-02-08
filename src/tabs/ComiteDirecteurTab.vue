@@ -8,9 +8,8 @@
           <span class="block text-indigo-500 xl:inline">L'équipe</span>
         </div>
         <div>
-            <span class="block text-slate-500 xl:inline"> du </span>
-          <span class="block text-indigo-700 xl:inline">CDVL 59</span
-          >
+          <span class="block text-slate-500 xl:inline"> du </span>
+          <span class="block text-indigo-700 xl:inline">CDVL 59</span>
         </div>
       </div>
     </h1>
