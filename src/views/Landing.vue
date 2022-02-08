@@ -153,7 +153,7 @@ export default {
   },
   data() {
     const paramsTab = this.$route.params.initialtab ? this.$route.params.initialtab : "tab_-1";
-    const initialtab = parseInt(paramsTab.substr(4)) ? parseInt(paramsTab.substr(4)) : -1;
+    const initialtab = isNaN(parseInt(paramsTab.substr(4))) ? -1 : parseInt(paramsTab.substr(4));
     return {
       initialtab,
       tabNumber: ref(initialtab),
