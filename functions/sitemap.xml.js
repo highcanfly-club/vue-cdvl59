@@ -1,7 +1,7 @@
 const canonicalURL = "https://cdvl59.cf";
 const routes = [
     {
-        path: "/index",
+        path: "/",
         name: "Index",
     },
     {
