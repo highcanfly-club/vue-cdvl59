@@ -1,0 +1,15 @@
+/* TEAM */
+	Creator: Ronan LE MEILLAT
+	Contact: Ronan [at] highcanfly.club
+	From: Les Contamines-Monjoie, Haute-Savoie, France
+
+/* THANKS */
+
+	Hosting: Github, Cloudflare
+
+
+/* SITE */
+	Language: French
+	Doctype:HTML5
+	IDE: Visual Studio Code
+    Frameworks: Vue3, TailwindCSS, CoreJS

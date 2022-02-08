@@ -1,4 +1,3 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div>
     <div class="relative bg-white overflow-hidden">
@@ -15,21 +14,27 @@
           >
             <polygon points="50,0 100,0 50,100 0,100" />
           </svg>
-          <div><Header /></div>
+          <div><Header @toggleTabs="toggleTabs($event)" /></div>
 
           <main
             class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
           >
-            <div class="sm:text-center lg:text-left">
+            <div
+              v-bind:class="{
+                hidden: tabNumber !== -1,
+                block: tabNumber === -1,
+              }"
+              class="sm:text-center lg:text-left"
+            >
               <h1
                 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
               >
                 <div class="flex-col">
-                  <diV
-                    ><span class="block text-indigo-500 xl:inline"
+                  <div>
+                    <span class="block text-indigo-500 xl:inline"
                       >Comité Départemental</span
-                    ></diV
-                  >
+                    >
+                  </div>
                   <div>
                     <span class="block text-slate-300 xl:inline">de&nbsp;</span>
                     <span class="block text-indigo-700 xl:inline"
@@ -71,6 +76,33 @@
                 </div>
               </div>
             </div>
+            <div
+              v-bind:class="{ hidden: tabNumber !== 0, block: tabNumber === 0 }"
+              class="sm:text-center lg:text-left"
+            ><kite-tab/>
+            </div>
+            <div
+              v-bind:class="{ hidden: tabNumber !== 1, block: tabNumber === 1 }"
+              class="sm:text-center lg:text-left"
+            ><parapente-tab/></div>
+            <div
+              v-bind:class="{ hidden: tabNumber !== 2, block: tabNumber === 2 }"
+              class="sm:text-center lg:text-left"
+            >
+              <cerf-volant-tab/>
+            </div>
+            <div
+              v-bind:class="{ hidden: tabNumber !== 3, block: tabNumber === 3 }"
+              class="sm:text-center lg:text-left"
+            >
+              <boomerang-tab/>
+            </div>
+            <div
+              v-bind:class="{ hidden: tabNumber !== 5, block: tabNumber === 5 }"
+              class="sm:text-center lg:text-left"
+            >
+              <comite-directeur-tab/>
+            </div>
           </main>
         </div>
       </div>
@@ -97,8 +129,14 @@
 </template>
 
 <script>
+import { ref } from "vue";
 import Header from "@/headers/Header.vue";
 import Footer from "@/footers/Footer.vue";
+import ParapenteTab from "@/tabs/ParapenteTab.vue";
+import KiteTab from "@/tabs/KiteTab.vue";
+import CerfVolantTab from "@/tabs/CerfVolantTab.vue";
+import BoomerangTab from "@/tabs/BoomerangTab.vue";
+import ComiteDirecteurTab from "@/tabs/ComiteDirecteurTab.vue";
 
 export default {
   description:
@@ -107,9 +145,27 @@ export default {
   components: {
     Header,
     Footer,
+    KiteTab,
+    ParapenteTab,
+    CerfVolantTab,
+    BoomerangTab,
+    ComiteDirecteurTab,
+  },
+  data() {
+    const paramsTab = this.$route.params.initialtab ? this.$route.params.initialtab : "tab_-1";
+    const initialtab = parseInt(paramsTab.substr(4)) ? parseInt(paramsTab.substr(4)) : -1;
+    return {
+      initialtab,
+      tabNumber: ref(initialtab),
+    };
   },
   setup() {
     return {};
+  },
+  methods: {
+    toggleTabs(tabNumber) {
+      this.tabNumber = tabNumber;
+    },
   },
 };
 </script>
