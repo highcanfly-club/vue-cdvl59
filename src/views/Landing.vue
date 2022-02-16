@@ -142,6 +142,7 @@ export default {
   description:
     "Le comité départemental de vol libre du Nord fédère les clubs de kite-surf, de deltaplane, de cerf-volant, de parapente et de boomerang du Nord",
   title: "Comité départemental de Vol Libre du Nord",
+  canonical: (new URL(window.location)),
   components: {
     Header,
     Footer,

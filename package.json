@@ -27,7 +27,8 @@
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.16",
     "vue-template-compiler": "^2.6.12",
-    "wrangler": "^0.0.16"
+    "wrangler": "^0.0.16",
+    "gitlog": "^4.0.4"
   },
   "eslintConfig": {
     "root": true,

@@ -59,6 +59,20 @@
                     >Fédération Française de Vol Libre</a
                   >
                 </li>
+                <li>
+                  <a
+                    class="
+                      text-slate-400
+                      hover:text-slate-800
+                      font-semibold
+                      block
+                      pb-2
+                      text-xs
+                    "
+                    href="/sitemap.xml"
+                    >Plan du site</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
