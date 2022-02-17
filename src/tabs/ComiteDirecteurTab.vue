@@ -14,7 +14,7 @@
       </div>
     </h1>
     <div
-      class="my-2 not-prose relative bg-slate-50 rounded-xl overflow-hidden dark:bg-slate-800/25"
+      class="my-2 not-prose relative rounded-xl overflow-hidden dark:bg-slate-800/25"
     >
       <div
         style="background-position: 10px 10px"
@@ -24,7 +24,7 @@
         <div class="shadow-sm overflow-hidden">
           <table class="border-collapse table-auto w-full text-sm">
             <tbody>
-              <tr>
+              <tr class="odd:bg-slate-50 even:bg-white ">
                 <td
                   class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
                 >
@@ -38,7 +38,7 @@
                   >
                 </td>
               </tr>
-              <tr>
+              <tr class="odd:bg-slate-50 even:bg-white ">
                 <td
                   class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
                 >
@@ -52,7 +52,7 @@
                   >
                 </td>
               </tr>
-              <tr>
+              <tr class="odd:bg-slate-50 even:bg-white ">
                 <td
                   class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
                 >
@@ -66,7 +66,7 @@
                   >
                 </td>
               </tr>
-              <tr>
+              <tr class="odd:bg-slate-50 even:bg-white ">
                 <td
                   class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
                 >
@@ -84,7 +84,7 @@
                   >
                 </td>
               </tr>
-              <tr>
+              <tr class="odd:bg-slate-50 even:bg-white ">
                 <td
                   class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
                 >
@@ -98,7 +98,7 @@
                   >
                 </td>
               </tr>
-              <tr>
+              <tr class="odd:bg-slate-50 even:bg-white ">
                 <td
                   class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
                 >
