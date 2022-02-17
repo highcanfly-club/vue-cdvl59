@@ -268,8 +268,8 @@
 							<table class="border-collapse table-auto w-full text-sm">
 								<thead>
 									<tr >
-										<th class="border-b dark:border-slate-600 font-medium p-4 pl-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">URL</th>
-										<th class="border-b dark:border-slate-600 font-medium p-4 pl-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">Dernière mise à jour</th>
+										<th class="border-b dark:border-slate-600 font-medium p-4 pl-8 pt-0 pb-3 text-indigo-500 dark:text-slate-200 text-left">Adresse</th>
+										<th class="border-b dark:border-slate-600 font-medium p-4 pl-8 pt-0 pb-3 text-indigo-500 dark:text-slate-200 text-left">Dernière mise à jour</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -301,44 +301,45 @@
 					</div>
 					<div class="absolute inset-0 pointer-events-none border border-black/5 rounded-xl dark:border-white/5"></div>
 				</div>
-				<footer class="relative pt-8 pb-6" >
-					<div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"  style="transform: translateZ(0px);"></div>
-					<div class="container mx-auto px-4" >
+				<footer class="relative pt-8 pb-6">
+					<div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20" style="transform: translateZ(0px);"></div>
+					<div class="container mx-auto px-4">
 						<hr class="my-6 border-slate-300" />
-							<div class="flex flex-wrap text-center lg:text-left" >
-								<div class="w-full lg:w-6/12 px-4" >
-									<h4 class="text-xl font-semibold text-slate-500" >Comité Départemental de Vol Libre du Nord</h4>
-									<h5 class="text-base mt-0 mb-2 text-slate-400" > 2, digue Nicolas II <br/>Base de voile de la Licorne<br/> 59240 Dunkerque </h5>
-										<div class="mt-6 lg:mb-0 mb-6" ></div>
-									</div>
-									<div class="w-full lg:w-6/12 px-4" >
-										<div class="flex flex-wrap items-top mb-6" >
-											<div class="text-slate-400 w-full lg:w-5/12 px-4" >
-												<span class="block uppercase text-slate-500 text-xs font-semibold mb-2" >Liens utiles</span>
-												<ul class="list-unstyled" >
-													<li >
-														<a class="text-slate-400 hover:text-slate-800 font-semibold block pb-2 text-xs" href="https://www.ffvl.fr" >Fédération Française de Vol Libre</a>
-													</li>
-													<li >
-														<a class="text-slate-400 hover:text-slate-800 font-semibold block pb-2 text-xs" href="/sitemap.xml" >Plan du site</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="flex flex-wrap items-center md:justify-between justify-center" >
-									<div class="w-full md:w-5/12 px-4 mx-auto text-center" >
-										<div class="text-xs text-slate-500 font-semibold py-1" >
-											<a href="https://cdvl59.cf" class="text-slate-500 hover:text-slate-800">Copyright © Comité Départemental de Vol Libre du Nord - 2021-2022</a> . 
-										</div>
-									</div>
+						<div class="flex flex-wrap text-center lg:text-left">
+							<div class="w-full lg:w-6/12 px-4">
+								<h4 class="text-xl font-semibold text-slate-500">Comité Départemental de Vol Libre du Nord</h4>
+								<h5 class="text-base mt-0 mb-2 text-slate-400"> 
+								<pre class="text-base font-sans mt-0 mb-2 text-slate-400">2, digue Nicolas II
+Base de voile de la Licorne
+59240 Dunkerque </pre></h5>
+							<div class="mt-6 lg:mb-0 mb-6"></div>
+						</div>
+						<div class="w-full lg:w-6/12 px-4">
+							<div class="flex flex-wrap items-top mb-6">
+								<div class="text-slate-400 w-full lg:w-5/12 px-4">
+									<span class="block uppercase text-slate-500 text-xs font-semibold mb-2">Liens utiles</span>
+									<ul class="list-unstyled">
+										<li >
+											<a class="text-slate-400 hover:text-slate-800 font-semibold block pb-2 text-xs" href="https://www.ffvl.fr">Fédération Française de Vol Libre</a>
+										</li>
+										<li >
+											<a class="text-slate-400 hover:text-slate-800 font-semibold block pb-2 text-xs" href="/sitemap.xml">Plan du site</a>
+										</li>
+									</ul>
 								</div>
 							</div>
-							<div class="vue-scroll-up">
-								<img src="/img/arrow-top.cde1f9c4.svg" style="position: absolute;" /></div>
-							</footer>
-						</body>
-					</html>
-				</xsl:template>
-			</xsl:stylesheet>
+						</div>
+					</div>
+					<div class="flex flex-wrap items-center md:justify-between justify-center">
+						<div class="w-full md:w-5/12 px-4 mx-auto text-center">
+							<div class="text-xs text-slate-500 font-semibold py-1">
+								<a href="https://cdvl59.cf" class="text-slate-500 hover:text-slate-800">Copyright © Comité Départemental de Vol Libre du Nord - 2021-2022</a> . 
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>
