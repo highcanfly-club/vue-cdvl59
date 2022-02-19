@@ -14,7 +14,7 @@
           >
             <polygon points="50,0 100,0 50,100 0,100" />
           </svg>
-          <div><Header @toggleTabs="toggleTabs($event)" /></div>
+          <div><main-header @toggleTabs="toggleTabs($event)" /></div>
 
           <main
             class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
@@ -127,14 +127,14 @@
         />
       </div>
     </div>
-    <div><Footer /></div>
+    <div><main-footer /></div>
   </div>
 </template>
 
 <script>
 import { ref } from "vue";
-import Header from "@/headers/Header.vue";
-import Footer from "@/footers/Footer.vue";
+import MainHeader from "@/headers/MainHeader.vue";
+import MainFooter from "@/footers/MainFooter.vue";
 import ParapenteTab from "@/tabs/ParapenteTab.vue";
 import KiteTab from "@/tabs/KiteTab.vue";
 import CerfVolantTab from "@/tabs/CerfVolantTab.vue";
@@ -147,8 +147,8 @@ export default {
   title: "Comité départemental de Vol Libre du Nord",
   canonical: new URL(window.location),
   components: {
-    Header,
-    Footer,
+    MainHeader,
+    MainFooter,
     KiteTab,
     ParapenteTab,
     CerfVolantTab,

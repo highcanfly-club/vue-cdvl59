@@ -6,10 +6,10 @@
 
 <script>
 export default {
-  name: "observer",
+  name: "LazyObserver",
   data() {
     return {
-      observer: null
+      LazyObserver: null
     };
   },
   props: {
@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     unobserve() {
-      this.observer.unobserve(this.$el);
+      this.LazyObserver.unobserve(this.$el);
     }
   },
   mounted() {
@@ -38,15 +38,15 @@ export default {
       rootMargin: this.rootMargin,
       threshold: this.threshold
     };
-    this.observer = new IntersectionObserver(entries => {
+    this.LazyObserver = new IntersectionObserver(entries => {
       this.$emit("on-change", entries[0], this.unobserve);
     }, options);
-    this.observer.observe(this.$el);
+    this.LazyObserver.observe(this.$el);
   },
   beforeDestroy() {
-    if (this.observer) {
+    if (this.LazyObserver) {
       this.unobserve();
-      this.observer = null;
+      this.LazyObserver = null;
     }
   }
 };
