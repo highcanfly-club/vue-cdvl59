@@ -79,29 +79,32 @@
             <div
               v-bind:class="{ hidden: tabNumber !== 0, block: tabNumber === 0 }"
               class="sm:text-center lg:text-left"
-            ><kite-tab/>
+            >
+              <kite-tab />
             </div>
             <div
               v-bind:class="{ hidden: tabNumber !== 1, block: tabNumber === 1 }"
               class="sm:text-center lg:text-left"
-            ><parapente-tab/></div>
+            >
+              <parapente-tab />
+            </div>
             <div
               v-bind:class="{ hidden: tabNumber !== 2, block: tabNumber === 2 }"
               class="sm:text-center lg:text-left"
             >
-              <cerf-volant-tab/>
+              <cerf-volant-tab />
             </div>
             <div
               v-bind:class="{ hidden: tabNumber !== 3, block: tabNumber === 3 }"
               class="sm:text-center lg:text-left"
             >
-              <boomerang-tab/>
+              <boomerang-tab />
             </div>
             <div
               v-bind:class="{ hidden: tabNumber !== 5, block: tabNumber === 5 }"
               class="sm:text-center lg:text-left"
             >
-              <comite-directeur-tab/>
+              <comite-directeur-tab />
             </div>
           </main>
         </div>
@@ -142,7 +145,7 @@ export default {
   description:
     "Le comité départemental de vol libre du Nord fédère les clubs de kite-surf, de deltaplane, de cerf-volant, de parapente et de boomerang du Nord",
   title: "Comité départemental de Vol Libre du Nord",
-  canonical: (new URL(window.location)),
+  canonical: new URL(window.location),
   components: {
     Header,
     Footer,
@@ -153,8 +156,33 @@ export default {
     ComiteDirecteurTab,
   },
   data() {
-    const paramsTab = this.$route.params.initialtab ? this.$route.params.initialtab : "tab_-1";
-    const initialtab = isNaN(parseInt(paramsTab.substr(4))) ? -1 : parseInt(paramsTab.substr(4));
+    console.log(this.$route.params.initialtab);
+    const paramsTab = this.$route.params.initialtab
+      ? this.$route.params.initialtab
+      : "tab_-1";
+    let initialtab =  -1 ;
+    switch (paramsTab) {
+      case "parapente":
+        initialtab = 1;
+        break;
+      case "kite":
+        initialtab = 0;
+        break;
+      case "cerf-volant":
+        initialtab = 2;
+        break;
+      case "boomerang":
+        initialtab = 3;
+        break;
+      case "comite-directeur":
+        initialtab = 5;
+        break;
+      default:
+        initialtab = isNaN(parseInt(paramsTab.substr(4)))
+          ? -1
+          : parseInt(paramsTab.substr(4));
+    }
+
     return {
       initialtab,
       tabNumber: ref(initialtab),

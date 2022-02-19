@@ -13,12 +13,19 @@
         </div>
       </div>
     </h1>
+    <div>
     <p
       class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
     >
       Licenciez-vous !<br />
       Partagez votre passion dans un club.
     </p>
+    </div>
+        <div>
+      <lazy-observer @on-change="onChange">
+        <club-card ref="clubsParapente" :lazy="true" clubType="cerf-volant" />
+      </lazy-observer>
+    </div>
     <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
       <div class="rounded-md shadow">
         <a
@@ -39,3 +46,23 @@
     </div>
   </div>
 </template>
+<script>
+import ClubCard from "@/cards/ClubCard.vue";
+import LazyObserver from "@/components/Utilities/LazyObserver.vue";
+
+export default {
+  components: {
+    ClubCard,
+    LazyObserver,
+  },
+  methods: {
+    onChange(entry, unobserve) {
+      if (entry.isIntersecting) {
+        unobserve();
+        this.$refs.clubsParapente.fetchData();
+      }
+    },
+  },
+  setup() {},
+};
+</script>

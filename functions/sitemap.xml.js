@@ -7,27 +7,27 @@ const routes = [
     _updatedAt: commit.vue_cdvl59
   },
   {
-    path: "/tab_0",
+    path: "/kite",
     name: "Kite",
     _updatedAt: commit.vue_cdvl59
   },
   {
-    path: "/tab_1",
+    path: "/parapente",
     name: "Parapente",
     _updatedAt: commit.vue_cdvl59
   },
   {
-    path: "/tab_2",
+    path: "/cerf-volant",
     name: "Cerf-Volant",
     _updatedAt: commit.vue_cdvl59
   },
   {
-    path: "/tab_3",
+    path: "/boomerang",
     name: "Boomerang",
     _updatedAt: commit.vue_cdvl59
   },
   {
-    path: "/tab_5",
+    path: "/comite-directeur",
     name: "Comité Directeur",
     _updatedAt: commit.vue_cdvl59
   },
