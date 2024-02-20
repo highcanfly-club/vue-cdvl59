@@ -1,5 +1,5 @@
 import { gitlogPromise, GitlogOptions } from "gitlog";
-import fs from 'fs';
+import * as fs from 'node:fs';
 
 // Option 1: Just use the function, returned commit type has specified fields
 const commits = await gitlogPromise({
