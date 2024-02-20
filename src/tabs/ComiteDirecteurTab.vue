@@ -34,7 +34,7 @@
                   class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
                 >
                   <a href="https://intranet.ffvl.fr/licences/172196"
-                    >Hugues BOURDELLE</a
+                    >Ronan LE MEILLAT</a
                   >
                 </td>
               </tr>
@@ -76,12 +76,13 @@
                   class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
                 >
                   <a href="https://intranet.ffvl.fr/licences/14818330"
-                    >Ronan LE MEILLAT</a
+                    >Hugues Bourdelle</a
                   ><br /><a href="https://intranet.ffvl.fr/licences/251697"
                     >Franck TINTILLIER</a
-                  ><br /><a href="https://intranet.ffvl.fr/licences/311511"
-                    >Erwan TRIHAN</a
                   >
+                  <!-- <br /><a href="https://intranet.ffvl.fr/licences/311511"
+                    >Erwan TRIHAN</a
+                  > -->
                 </td>
               </tr>
               <tr class="odd:bg-slate-50 even:bg-white ">
@@ -94,7 +95,7 @@
                   class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
                 >
                   <a href="https://intranet.ffvl.fr/licences/159464"
-                    >Sebastien CHARTOGNE</a
+                    >Sébastien CHARTOGNE</a
                   >
                 </td>
               </tr>
@@ -107,9 +108,10 @@
                 <td
                   class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
                 >
-                  <a href="https://intranet.ffvl.fr/licences/311511"
+                  <!-- <a href="https://intranet.ffvl.fr/licences/311511"
                     >Erwan TRIHAN</a
-                  ><br /><a href="https://intranet.ffvl.fr/licences/175603"
+                  ><br /> -->
+                  <a href="https://intranet.ffvl.fr/licences/175603"
                     >Eric WATRIN</a
                   >
                 </td>

@@ -1,4 +1,4 @@
-const canonicalURL = "https://cdvl59.cf";
+const canonicalURL = "https://cdvl59.eu.org";
 const commit = require('../commit.json');
 const routes = [
   {

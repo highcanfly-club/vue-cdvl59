@@ -23,8 +23,8 @@
         <div class="w-full lg:w-6/12 px-4">
           <h4 class="text-xl font-semibold text-slate-500">Comité Départemental de Vol Libre du Nord</h4>
           <h5 class="text-base mt-0 mb-2 text-slate-400">
-            2, digue Nicolas II
-            <br />Base de voile de la Licorne<br/>
+            Base nautique de la Licorne
+            <br />2, digue Nicolas II<br/>
             59240 Dunkerque
           </h5>
           <div class="mt-6 lg:mb-0 mb-6">

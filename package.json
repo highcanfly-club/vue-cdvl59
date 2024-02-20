@@ -1,51 +1,37 @@
 {
   "name": "vue-cdvl59",
-  "version": "0.2.0",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "npm run prepare-env ; vite",
+    "build": "npm run prepare-env ; vue-tsc && vite build",
+    "prepare-env": "node --experimental-fetch --loader ts-node/esm ./prepare-env.ts",
+    "preview": "vite preview",
+    "wrangler-dev": "npm run prepare-env ; NODE_NO_WARNINGS=1 npx wrangler pages dev --log-level info --kv KV_TOKENS --inspector-port 9229 --local-protocol http --proxy 5173 -- vite ",
+    "wrangler-dist": "npm run prepare-env ; npm run build && npx wrangler pages dev dist/  --kv KV_TOKENS --local-protocol http --proxy 5173"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.5.0",
-    "@heroicons/vue": "^1.0.5",
-    "core-js": "^3.21.1",
-    "vue": "^3.2.31",
-    "vue-router": "^4.0.12",
+    "@headlessui/vue": "^1.7.19",
+    "@heroicons/vue": "^2.1.1",
     "@sanity/client": "^3.1.0",
     "@sanity/image-url": "^1.0.1",
+    "core-js": "^3.36.0",
+    "vue": "^3.4.19",
+    "vue-router": "^4.2.5",
     "walkjs": "^3.2.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.5",
-    "@babel/eslint-parser": "^7.17.0",
-    "@vue/cli-plugin-babel": "^5.0.1",
-    "@vue/cli-plugin-eslint": "^5.0.1",
-    "@vue/cli-service": "^5.0.1",
-    "autoprefixer": "^10.4.2",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^8.9.0",
-    "eslint-plugin-vue": "^8.4.1",
-    "postcss": "^8.4.6",
-    "tailwindcss": "^3.0.23",
-    "vue-template-compiler": "^2.6.14",
-    "wrangler": "^0.0.16",
-    "gitlog": "^4.0.4"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    }
+    "@vitejs/plugin-vue": "^5.0.3",
+    "autoprefixer": "^10.4.17",
+    "gitlog": "^4.0.4",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.0",
+    "vue-tsc": "^1.8.27",
+    "wrangler": "^3.28.3"
   },
   "postcss": {
     "plugins": {
