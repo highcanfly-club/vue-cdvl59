@@ -47,8 +47,8 @@
                 <td
                   class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
                 >
-                  <a href="https://intranet.ffvl.fr/licences/159754"
-                    >Aymeric CEGIELSKI</a
+                  <a href="https://intranet.ffvl.fr/licences/159464"
+                    >Sébastien CHARTOGNE</a
                   >
                 </td>
               </tr>
@@ -75,14 +75,14 @@
                 <td
                   class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
                 >
-                  <a href="https://intranet.ffvl.fr/licences/14818330"
-                    >Hugues Bourdelle</a
+                  <a href="https://intranet.ffvl.fr/licences/206579"
+                    >Robert DUPREZ</a
                   ><br /><a href="https://intranet.ffvl.fr/licences/251697"
                     >Franck TINTILLIER</a
                   >
-                  <!-- <br /><a href="https://intranet.ffvl.fr/licences/311511"
-                    >Erwan TRIHAN</a
-                  > -->
+                  <br /><a href="https://intranet.ffvl.fr/licences/14938407"
+                    >Simon MICHAU</a
+                  >
                 </td>
               </tr>
               <tr class="odd:bg-slate-50 even:bg-white ">
@@ -99,7 +99,7 @@
                   >
                 </td>
               </tr>
-              <tr class="odd:bg-slate-50 even:bg-white ">
+              <!-- <tr class="odd:bg-slate-50 even:bg-white ">
                 <td
                   class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
                 >
@@ -108,14 +108,14 @@
                 <td
                   class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
                 >
-                  <!-- <a href="https://intranet.ffvl.fr/licences/311511"
+                  <a href="https://intranet.ffvl.fr/licences/311511"
                     >Erwan TRIHAN</a
-                  ><br /> -->
+                  ><br />
                   <a href="https://intranet.ffvl.fr/licences/175603"
                     >Eric WATRIN</a
                   >
                 </td>
-              </tr>
+              </tr> -->
             </tbody>
           </table>
         </div>
