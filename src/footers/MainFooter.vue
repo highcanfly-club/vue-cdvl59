@@ -25,7 +25,7 @@
           <h5 class="text-base mt-0 mb-2 text-slate-400">
             Base nautique de la Licorne
             <br />2, digue Nicolas II<br/>
-            59240 Dunkerque
+            59140 Dunkerque
           </h5>
           <div class="mt-6 lg:mb-0 mb-6">
   
