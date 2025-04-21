@@ -1,8 +1,8 @@
-import { gitlogPromise, GitlogOptions } from "gitlog";
+import gitlog, { GitlogOptions } from "gitlog";
 import * as fs from 'node:fs';
 
 // Option 1: Just use the function, returned commit type has specified fields
-const commits = await gitlogPromise({
+const commits = await gitlog({
   repo: ".",
   number: 1,
   fields: ["authorDate"],
