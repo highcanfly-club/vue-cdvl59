@@ -1,6 +1,6 @@
 # vue-cdvl59
 
-Website sources for [cdvl59](https://cdvl59.cf)
+Website sources for [cdvl59](https://cdvl59.eu.org)
 
 ## License
 

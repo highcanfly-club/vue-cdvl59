@@ -84,7 +84,7 @@
         <div class="w-full md:w-5/12 px-4 mx-auto text-center">
           <div class="text-xs text-slate-500 font-semibold py-1">
             <a
-              href="https://cdvl59.cf"
+              href="https://cdvl59.eu.org"
               class="text-slate-500 hover:text-slate-800"
               >Copyright © Comité Départemental de Vol Libre du Nord - 2021-{{ date }}</a
             >
